@@ -1,0 +1,6 @@
+.wrapper {
+    position: relative;
+    margin-bottom: rem(120px);
+    margin-top: rem(120px);
+    box-sizing: border-box;
+}
