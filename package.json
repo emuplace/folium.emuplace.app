@@ -11,8 +11,8 @@
     },
     "dependencies": {
         "@mantine/core": "^7.10.0",
-        "@mantine/hooks": "7.10.0",
-        "@mantine/vanilla-extract": "7.10.0",
+        "@mantine/hooks": "^7.10.0",
+        "@mantine/vanilla-extract": "^7.10.0",
         "@tabler/icons-react": "^3.12.0",
         "@vanilla-extract/css": "^1.14.1",
         "react": "^18.2.0",
