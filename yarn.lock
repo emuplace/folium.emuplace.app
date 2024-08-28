@@ -329,11 +329,6 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@mantine/carousel@^7.12.1":
-  version "7.12.1"
-  resolved "https://registry.npmjs.org/@mantine/carousel/-/carousel-7.12.1.tgz"
-  integrity sha512-dnzd5kJvObjrW3S0N85Pua7sVuB1A47j96FXW/GlV0OnbnMfpZv6aO29Vi9YoqlGzius8rsDzbXmL725xcLPmQ==
-
 "@mantine/core@^7.10.0":
   version "7.12.1"
   resolved "https://registry.npmjs.org/@mantine/core/-/core-7.12.1.tgz"
@@ -953,18 +948,6 @@ electron-to-chromium@^1.5.4:
   version "1.5.11"
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.11.tgz"
   integrity sha512-R1CccCDYqndR25CaXFd6hp/u9RaaMcftMkphmvuepXr5b1vfLkRml6aWVeBhXJ7rbevHkKEMJtz8XqPf7ffmew==
-
-embla-carousel-react@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.npmjs.org/embla-carousel-react/-/embla-carousel-react-7.1.0.tgz"
-  integrity sha512-tbYRPRZSDNd2QLNqYDcArAakGIxtUbhS7tkP0dGXktXHGgcX+3ji3VrOUTOftBiujZrMV8kRxtrRUe/1soloIQ==
-  dependencies:
-    embla-carousel "7.1.0"
-
-embla-carousel@7.1.0:
-  version "7.1.0"
-  resolved "https://registry.npmjs.org/embla-carousel/-/embla-carousel-7.1.0.tgz"
-  integrity sha512-Bh8Pa8NWzgugLkf8sAGexQlBCNDFaej5BXiKgQdRJ1mUC9NWBrw9Z23YVPVGkguWoz5LMjZXXFVGCobl3UPt/Q==
 
 esbuild@^0.21.3:
   version "0.21.5"
