@@ -113,13 +113,16 @@ export function Header() {
                             <Image src={'/rewrite/library.png'} />
                         </Paper>
                         <Paper key={'two'} radius={'lg'} withBorder style={{ overflow: 'hidden' }}>
-                            <Image src={'/rewrite/settings.png'} />
+                            <Image src={'/rewrite/game_settings.png'} />
                         </Paper>
                         <Paper key={'three'} radius={'lg'} withBorder style={{ overflow: 'hidden' }}>
-                            <Image src={'/rewrite/cytrus_settings.png'} />
+                            <Image src={'/rewrite/search.png'} />
                         </Paper>
                         <Paper key={'four'} radius={'lg'} withBorder style={{ overflow: 'hidden' }}>
-                            <Image src={'/rewrite/search.png'} />
+                            <Image src={'/rewrite/core_settings.png'} />
+                        </Paper>
+                        <Paper key={'five'} radius={'lg'} withBorder style={{ overflow: 'hidden' }}>
+                            <Image src={'/rewrite/settings.png'} />
                         </Paper>
                     </SimpleGrid>
                 </Grid.Col>
@@ -212,7 +215,7 @@ export function Header() {
                             </Text>
                             <Space h={'md'} />
                             <Text c={'red'} size='sm'>
-                                Camera, Home Menu, DLC and Updates are currently not supported by Cytrus
+                                Home Menu, DLC and Updates are currently not supported by Cytrus
                             </Text>
                             <Space h={'md'} />
                             <Accordion variant='contained' classNames={classes}>
@@ -222,15 +225,15 @@ export function Header() {
                                     </Accordion.Control>
                                     <Accordion.Panel>
                                         <Text>
-                                            Cytrus now has very early camera support, the image is garbled
+                                            Camera support is nearly complete with just the BGRA to YUY2 pixel format missing
                                         </Text>
                                         <Space h={'md'} />
-                                        <Button component='a' href='https://github.com/folium-app/Cytrus/commit/dbbfc7b6b0f049d63f1255226e90e5c3306e366c' radius={'xl'} variant='default'>
+                                        <Button component='a' href='https://github.com/folium-app/Cytrus/commit/cd7feaf792e5558dff4f59dbb6199d9fd75dd805' radius={'xl'} variant='default'>
                                             GitHub Commit
                                         </Button>
                                         <Space h={'md'} />
                                         <TweetEmbed
-                                            tweetId={'1828498093035397193'}
+                                            tweetId={'1829422362619728235'}
                                             options={{ theme: useMantineColorScheme().colorScheme }}
                                         />
                                     </Accordion.Panel>
