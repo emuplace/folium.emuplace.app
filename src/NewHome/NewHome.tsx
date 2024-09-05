@@ -22,7 +22,7 @@ export default function NewHome() {
                     </Text>
                     <Center>
                         <Badge color={'gold'}>
-                            Friday, 7th September
+                            Friday, 6th September
                         </Badge>
                     </Center>
                     {/*
