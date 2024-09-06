@@ -1,6 +1,6 @@
 import '@mantine/core/styles.css';
 import {
-    Anchor, Badge, Center, Flex,
+    Anchor, Badge, Center, Button, Flex,
     MantineProvider,
     Stack, Text, Title
 } from '@mantine/core';
@@ -20,19 +20,17 @@ export default function NewHome() {
                     <Text c={'dimmed'} ta={'center'}>
                         Beautifully designed, high performing multi-system emulation in the palm of your hands
                     </Text>
-                    <Center>
-                        <Badge color={'gold'}>
-                            Friday, 6th September
-                        </Badge>
-                    </Center>
-                    {/*
                     <Flex align={'center'} gap={'md'} justify={'center'} direction={'row'} wrap={'wrap'}>
                         <Button component='a' href='https://apps.apple.com/au/app/folium/id6498623389' color='blue' radius={'xl'} variant='filled'>Open App Store</Button>
                         <Button component='a' href='https://discord.gg/jv3wmCUTw7' color='violet' radius={'xl'}>Join Discord</Button>
-                        <Button component='a' href='https://github.com/folium-app' color='gray' radius={'xl'} variant='filled'>Open GitHub</Button>
-                        <Button component='a' href='/rewrite' radius={'xl'} variant='filled'>Browse Rewrite</Button>
-                        <Button component='a' href='/ipas/Folium-v1.6-Sideload.ipa.zip' color='cyan' radius={'xl'} variant='filled'>Sideload</Button>
-                    </Flex>*/}
+                        <Button component='a' href='https://github.com/folium-app' color='dark' radius={'xl'} variant='filled'>Open GitHub</Button>
+                        <Button component='a' href='ipas/folium-v1.7-sideload.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload</Button>
+                    </Flex>
+                    <Center>
+                        <Badge>
+                            v1.7
+                        </Badge>
+                    </Center>
                 </Stack>
             </Flex>
         </MantineProvider>
