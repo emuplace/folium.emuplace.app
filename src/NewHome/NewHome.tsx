@@ -30,7 +30,27 @@ export default function NewHome() {
                     tertiaryText: 'archive.zip will contain the currently available core folders, this can be moved out of the documents directory, extracted on-device and used with the latest release'
                 },
                 {
+                    secondaryText: 'Added the ability to extract a previous archive reverting any changes',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Added support for the system apps in the Cytrus core',
+                    tertiaryText: null
+                },
+                {
                     secondaryText: 'Changed how several features are handled improving support for both iPad and iPhone',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Fixed an issue with the AES keys in the Cytrus core',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Fixed an issue where the X/Y button on physical controllers would get stuck',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Fixed an issue where system apps would be duplicated in the Cytrus core',
                     tertiaryText: null
                 },
                 {
