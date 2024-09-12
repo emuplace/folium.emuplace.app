@@ -4,14 +4,38 @@ import {
     MantineProvider, List, Accordion,
     Stack, Text, Title
 } from '@mantine/core';
+import classes from './NewHome.module.css';
 import { theme } from '../theme';
 
 export default function NewHome() {
     const changes = [
         {
-            text: 'v1.9',
+            text: 'v1.10',
             isLatest: false,
             isUpcoming: true,
+            details: [
+                {
+                    secondaryText: 'Added support for some missing iPad models',
+                    tertiaryText: 'iPad Pro 6th Gen, iPad Pro 7th Gen'
+                },
+                {
+                    secondaryText: 'Changed how library loading is handled to stop the game duplication issue',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Fixed an issue where connecting a physical controller would hide the entire emulation screen',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Removed the archive feature in v1.10 and later preventing the worry of lost files',
+                    tertiaryText: null
+                }
+            ]
+        },
+        {
+            text: 'v1.9',
+            isLatest: true,
+            isUpcoming: false,
             details: [
                 {
                     secondaryText: 'Added automatic hiding and showing of the on-screen controller when a physical controller is connected and disconnected',
@@ -121,7 +145,7 @@ export default function NewHome() {
                     <Title order={2}>
                         Changes
                     </Title>
-                    <Accordion radius={'md'} variant="contained">
+                    <Accordion classNames={classes} radius={'md'} variant="contained">
                         {items}
                     </Accordion>
                 </Stack>
