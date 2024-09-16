@@ -1,6 +1,6 @@
 import '@mantine/core/styles.css';
 import {
-    Anchor, Button, Flex, Group, Badge,
+    Anchor, Button, Center, Flex, Group, Badge,
     MantineProvider, List, Accordion,
     Stack, Text, Title
 } from '@mantine/core';
@@ -148,6 +148,9 @@ export default function NewHome() {
                     <Accordion classNames={classes} radius={'md'} variant="contained">
                         {items}
                     </Accordion>
+                    <Center>
+                        <Button component='a' href='checklist' radius={'xl'} variant='filled'>Project Checklist</Button>
+                    </Center>
                 </Stack>
             </Flex>
         </MantineProvider>

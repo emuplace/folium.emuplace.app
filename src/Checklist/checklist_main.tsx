@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Rewrite from './Rewrite';
+import Checklist from './Checklist.tsx';
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <React.StrictMode>
-        <Rewrite />
+        <Checklist />
     </React.StrictMode>
 );
