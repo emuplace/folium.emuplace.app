@@ -11,8 +11,8 @@ export default function NewHome() {
     const changes = [
         {
             text: 'v1.10',
-            isLatest: false,
-            isUpcoming: true,
+            isLatest: true,
+            isUpcoming: false,
             details: [
                 {
                     secondaryText: 'Added support for some missing iPad models',
@@ -34,7 +34,7 @@ export default function NewHome() {
         },
         {
             text: 'v1.9',
-            isLatest: true,
+            isLatest: false,
             isUpcoming: false,
             details: [
                 {
@@ -108,8 +108,8 @@ export default function NewHome() {
                         <Text>
                             {item.text}
                         </Text>
-                        <Badge color={item.isLatest ? theme.primaryColor : item.isUpcoming ? 'dark' : theme.primaryColor}>
-                            {item.isLatest ? 'Latest' : item.isUpcoming ? 'Upcoming' : 'Latest'}
+                        <Badge color={item.isLatest ? theme.primaryColor : item.isUpcoming ? 'dark' : 'red'}>
+                            {item.isLatest ? 'Latest' : item.isUpcoming ? 'Upcoming' : 'Outdated'}
                         </Badge>
                     </Group>
                 </Accordion.Control>
@@ -140,7 +140,7 @@ export default function NewHome() {
                         <Button component='a' href='https://discord.gg/jv3wmCUTw7' color='violet' radius={'xl'}>Join Discord</Button>
                         <Button component='a' href='https://jarrodnorwell.gitbook.io/folium/getting-started' color='grape' radius={'xl'} variant='filled'>Getting Started</Button>
                         <Button component='a' href='https://github.com/folium-app' color='dark' radius={'xl'} variant='filled'>Open GitHub</Button>
-                        <Button component='a' href='ipas/folium-v1.7-sideload.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload</Button>
+                        <Button component='a' href='ipas/folium-v1.10-sideload.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload</Button>
                     </Flex>
                     <Title order={2}>
                         Changes
