@@ -1,7 +1,7 @@
 import '@mantine/core/styles.css';
 import {
     Alert, Badge, Button, Checkbox, Container,
-    Group, MantineProvider, Space, Text, Title
+    Group, MantineProvider, Space, Stack, Text, Title
 } from '@mantine/core';
 import { theme } from '../theme';
 import { IconInfoCircle } from '@tabler/icons-react';
@@ -35,24 +35,22 @@ export default function Checklist() {
                 </Group>
                 <Space h={'md'} />
                 <Title order={2}>
-                    Hardware Features
+                    Feature List
                 </Title>
                 <Space h={'sm'} />
-                <Group>
+                <Stack>
+                    <Checkbox color='yellow' label='Amiibo' variant='outline' />
                     <Checkbox color='yellow' indeterminate label='Camera' variant='outline' />
+                    <Checkbox color='yellow' label='Cheats' variant='outline' />
                     <Checkbox color='yellow' label='Gyroscope' variant='outline' />
-                    <Checkbox color='yellow' checked label='Microphone' />
-                    <Checkbox color='yellow' checked label='Speakers' />
-                </Group>
-                <Space h={'md'} />
-                <Title order={2}>
-                    Software Features
-                </Title>
-                <Space h={'sm'} />
-                <Group>
                     <Checkbox color='yellow' indeterminate label='Home Menu' variant='outline' />
                     <Checkbox color='yellow' indeterminate label='Keyboard' variant='outline' />
-                </Group>
+                    <Checkbox color='yellow' checked label='Microphone' />
+                    <Checkbox color='yellow' label='Mii' variant='outline' />
+                    <Checkbox color='yellow' label='Mods' variant='outline' />
+                    <Checkbox color='yellow' label='Multiplayer' variant='outline' />
+                    <Checkbox color='yellow' checked label='Speakers' />
+                </Stack>
 
                 <Space h={'lg'} />
 
@@ -73,21 +71,15 @@ export default function Checklist() {
                 </Group>
                 <Space h={'md'} />
                 <Title order={2}>
-                    Hardware Features
+                    Feature List
                 </Title>
                 <Space h={'sm'} />
-                <Group>
-                    <Checkbox color='grape' indeterminate label='Microphone' variant='outline' />
-                    <Checkbox color='grape' checked label='Speakers' />
-                </Group>
-                <Space h={'md'} />
-                <Title order={2}>
-                    Software Features
-                </Title>
-                <Space h={'sm'} />
-                <Group>
-                    <Checkbox color='grape' checked label='Home Menu' />
-                </Group>
+                <Stack>
+                    <Checkbox color='yellow' label='Game Boy' variant='outline' />
+                    <Checkbox color='yellow' label='Microphone' variant='outline' />
+                    <Checkbox color='yellow' label='Speakers' variant='outline' />
+                    <Checkbox color='yellow' label='Wi-Fi' variant='outline' />
+                </Stack>
 
                 <Space h={'lg'} />
 
@@ -108,15 +100,7 @@ export default function Checklist() {
                 </Group>
                 <Space h={'md'} />
                 <Title order={2}>
-                    Hardware Features
-                </Title>
-                <Space h={'sm'} />
-                <Group grow>
-                    <Alert variant='default' title="Incomplete" icon={icon} radius={'lg'} />
-                </Group>
-                <Space h={'md'} />
-                <Title order={2}>
-                    Software Features
+                    Feature List
                 </Title>
                 <Space h={'sm'} />
                 <Group grow>
