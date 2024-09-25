@@ -9,8 +9,10 @@ import { IconInfoCircle } from '@tabler/icons-react';
 export default function Checklist() {
     const icon = <IconInfoCircle />;
 
+    const date = new Date();
+
     return (
-        <MantineProvider theme={theme}>
+        <MantineProvider theme={theme} forceColorScheme={date.getHours() >= 7 && date.getHours() <= 19 ? "light" : "dark"}>
             <Container my={'xl'}>
                 <Badge>
                     Checklist
