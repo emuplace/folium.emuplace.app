@@ -122,8 +122,10 @@ export default function NewHome() {
         );
     });
 
+    const date = new Date();
+
     return (
-        <MantineProvider theme={theme}>
+        <MantineProvider theme={theme} forceColorScheme={date.getHours() >= 7 && date.getHours() <= 19 ? "light" : "dark"}>
             <Flex align={'center'} justify={'center'} h={'100vh'} px={'md'} w={'100vw'}>
                 <Stack>
                     <Anchor href='https://twitter.com/antique_codes' ta={'center'} target='_blank'>
