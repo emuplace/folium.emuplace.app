@@ -10,6 +10,17 @@ import { theme } from '../theme';
 export default function NewHome() {
     const changes = [
         {
+            text: 'v1.11',
+            isLatest: false,
+            isUpcoming: true,
+            details: [
+                {
+                    secondaryText: 'Added support for iPhone 16 series',
+                    tertiaryText: null
+                }
+            ]
+        },
+        {
             text: 'v1.10',
             isLatest: true,
             isUpcoming: false,
@@ -108,7 +119,7 @@ export default function NewHome() {
                         <Text>
                             {item.text}
                         </Text>
-                        <Badge color={item.isLatest ? theme.primaryColor : item.isUpcoming ? 'dark' : 'red'}>
+                        <Badge color={item.isLatest ? theme.primaryColor : item.isUpcoming ? 'violet' : 'red'}>
                             {item.isLatest ? 'Latest' : item.isUpcoming ? 'Upcoming' : 'Outdated'}
                         </Badge>
                     </Group>
