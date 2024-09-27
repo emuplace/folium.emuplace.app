@@ -17,6 +17,18 @@ export default function NewHome() {
                 {
                     secondaryText: 'Added support for iPhone 16 series',
                     tertiaryText: null
+                },
+                {
+                    secondaryText: 'Changed the Cytrus core to the latest original Citra source code',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Removed Mandarine specific settings from the Cytrus settings screen',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Update to the latest MoltenVK which should improve performance slightly',
+                    tertiaryText: null
                 }
             ]
         },
