@@ -1,19 +1,17 @@
 import '@mantine/core/styles.css';
 import {
-    Alert, Badge, Button, Checkbox, Container,
-    Group, MantineProvider, Space, Stack, Text, Title
+    MantineProvider
 } from '@mantine/core';
 import { theme } from '../theme';
-import { IconInfoCircle } from '@tabler/icons-react';
 
 export default function Checklist() {
-    const icon = <IconInfoCircle />;
+    // const icon = <IconInfoCircle />;
 
     const date = new Date();
 
     return (
         <MantineProvider theme={theme} forceColorScheme={date.getHours() >= 7 && date.getHours() <= 19 ? "light" : "dark"}>
-            <Container my={'xl'}>
+            {/*<Container my={'xl'}>
                 <Badge>
                     Checklist
                 </Badge>
@@ -108,7 +106,7 @@ export default function Checklist() {
                 <Group grow>
                     <Alert variant='default' title="Incomplete" icon={icon} radius={'lg'} />
                 </Group>
-            </Container>
+            </Container>*/}
         </MantineProvider>
     );
 }

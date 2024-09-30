@@ -11,8 +11,8 @@ export default function NewHome() {
     const changes = [
         {
             text: 'v1.11',
-            isLatest: false,
-            isUpcoming: true,
+            isLatest: true,
+            isUpcoming: false,
             details: [
                 {
                     secondaryText: 'Added support for iPhone 16 series',
@@ -34,7 +34,7 @@ export default function NewHome() {
         },
         {
             text: 'v1.10',
-            isLatest: true,
+            isLatest: false,
             isUpcoming: false,
             details: [
                 {
@@ -165,7 +165,7 @@ export default function NewHome() {
                         <Button component='a' href='https://discord.gg/jv3wmCUTw7' color='violet' radius={'xl'}>Join Discord</Button>
                         <Button component='a' href='https://jarrodnorwell.gitbook.io/folium/getting-started' color='grape' radius={'xl'} variant='filled'>Getting Started</Button>
                         <Button component='a' href='https://github.com/folium-app' color='gray' radius={'xl'} variant='filled'>Open GitHub</Button>
-                        <Button component='a' href='ipas/folium-v1.10-sideload.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload</Button>
+                        <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.11/folium-sideload-v1.11.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload</Button>
                     </Flex>
                     <Title order={2}>
                         Changes
@@ -174,7 +174,7 @@ export default function NewHome() {
                         {items}
                     </Accordion>
                     <Center>
-                        <Button component='a' href='checklist' radius={'xl'} variant='filled'>Project Checklist</Button>
+                        <Button component='a' href='checklist' radius={'xl'} variant='filled'>Update Checklist</Button>
                     </Center>
                 </Stack>
             </Flex>
