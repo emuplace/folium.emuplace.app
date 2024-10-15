@@ -161,13 +161,6 @@ export default function NewHome() {
                     <Text c={'dimmed'} ta={'center'}>
                         Beautifully designed, high performing multi-system emulation in the palm of your hands
                     </Text>
-                    <Text c={'red'} size='sm' ta={'center'}>
-                        Apple is currently rejecting the app under guideline 4.7.
-                    </Text>
-                    <Text c={'red'} size='sm' ta={'center'}>
-                        Folium does not fall under this and I'm actively trying to get this resolved.
-                    </Text>
-                    <Space h={'sm'} />
                     <Flex align={'center'} gap={'md'} justify={'center'} direction={'row'} wrap={'wrap'}>
                         <Button component='a' href='https://apps.apple.com/au/app/folium/id6498623389' color='blue' radius={'xl'} variant='filled'>Open App Store</Button>
                         <Button component='a' href='https://discord.gg/jv3wmCUTw7' color='violet' radius={'xl'}>Join Discord</Button>
@@ -181,9 +174,6 @@ export default function NewHome() {
                     <Accordion classNames={classes} radius={'md'} variant="contained">
                         {items}
                     </Accordion>
-                    <Center>
-                        <Button component='a' href='checklist' radius={'xl'} variant='filled'>Update Checklist</Button>
-                    </Center>
                 </Stack>
             </Flex>
         </MantineProvider>
