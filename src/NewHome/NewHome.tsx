@@ -1,9 +1,8 @@
 import '@mantine/core/styles.css';
 import {
-    Anchor, Button, Center, Flex, Group, Badge,
+    Anchor, Button, Flex, Group, Badge,
     MantineProvider, List, Accordion,
-    Stack, Text, Title,
-    Space
+    Stack, Text, Title
 } from '@mantine/core';
 import classes from './NewHome.module.css';
 import { theme } from '../theme';
