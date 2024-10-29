@@ -10,6 +10,29 @@ import { theme } from '../theme';
 export default function NewHome() {
     const changes = [
         {
+            text: 'v1.12',
+            isLatest: false,
+            isUpcoming: true,
+            details: [
+                {
+                    secondaryText: 'Added support for the iPad mini 7 (A17 Pro)',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Added support for cheats and multiplayer to the Cytrus core',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Changed how the Import and Settings buttons appear on the Library controller',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Changed the layout of the settings within the Settings menu',
+                    tertiaryText: null
+                }
+            ]
+        },
+        {
             text: 'v1.11',
             isLatest: true,
             isUpcoming: false,
@@ -51,61 +74,6 @@ export default function NewHome() {
                 },
                 {
                     secondaryText: 'Removed the archive feature in v1.10 and later preventing the worry of lost files',
-                    tertiaryText: null
-                }
-            ]
-        },
-        {
-            text: 'v1.9',
-            isLatest: false,
-            isUpcoming: false,
-            details: [
-                {
-                    secondaryText: 'Added automatic hiding and showing of the on-screen controller when a physical controller is connected and disconnected',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added support for the front camera in the Cytrus core',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added YUV422 support for both the front and rear cameras in the Cytrus core',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added an archive feature that will back up and reset the documents directory every major release to ensure a smooth transition between releases',
-                    tertiaryText: 'archive.zip will contain the currently available core folders, this can be moved out of the documents directory, extracted on-device and used with the latest release'
-                },
-                {
-                    secondaryText: 'Added the ability to extract a previous archive reverting any changes',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added support for the system apps in the Cytrus core',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Changed how several features are handled improving support for both iPad and iPhone',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Fixed an issue with the AES keys in the Cytrus core',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Fixed an issue where the X/Y button on physical controllers would get stuck',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Fixed an issue where system apps would be duplicated in the Cytrus core',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Fixed crashing when using Sign in with Apple or Skip due to a damaged documents directory',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Sorted games within the library screen alphabetically',
                     tertiaryText: null
                 }
             ]
