@@ -10,6 +10,25 @@ import { theme } from '../theme';
 export default function NewHome() {
     const changes = [
         {
+            text: 'v1.13',
+            isLatest: false,
+            isUpcoming: true,
+            details: [
+                {
+                    secondaryText: 'Added support for custom layout options for the Cytrus core',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Changed the number of columns for both Authentication and the Library screens',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Fixed an issue where all iPad models could not receive touch',
+                    tertiaryText: null
+                }
+            ]
+        },
+        {
             text: 'v1.12',
             isLatest: true,
             isUpcoming: false,
@@ -51,29 +70,6 @@ export default function NewHome() {
                 },
                 {
                     secondaryText: 'Update to the latest MoltenVK which should improve performance slightly',
-                    tertiaryText: null
-                }
-            ]
-        },
-        {
-            text: 'v1.10',
-            isLatest: false,
-            isUpcoming: false,
-            details: [
-                {
-                    secondaryText: 'Added support for some missing iPad models',
-                    tertiaryText: 'iPad Pro 6th Gen, iPad Pro 7th Gen'
-                },
-                {
-                    secondaryText: 'Changed how library loading is handled to stop the game duplication issue',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Fixed an issue where connecting a physical controller would hide the entire emulation screen',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Removed the archive feature in v1.10 and later preventing the worry of lost files',
                     tertiaryText: null
                 }
             ]
