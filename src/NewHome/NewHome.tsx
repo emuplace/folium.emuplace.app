@@ -12,8 +12,8 @@ export default function NewHome() {
     const changes = [
         {
             text: 'v1.13',
-            isLatest: false,
-            isUpcoming: true,
+            isLatest: true,
+            isUpcoming: false,
             details: [
                 {
                     secondaryText: 'Added support for custom layout options for the Cytrus core',
@@ -71,7 +71,7 @@ export default function NewHome() {
         },
         {
             text: 'v1.12',
-            isLatest: true,
+            isLatest: false,
             isUpcoming: false,
             details: [
                 {
@@ -170,7 +170,7 @@ export default function NewHome() {
                         <Button component='a' href='https://discord.gg/jv3wmCUTw7' color='violet' radius={'xl'}>Join Discord</Button>
                         {/*<Button component='a' href='https://jarrodnorwell.gitbook.io/folium/getting-started' color='grape' radius={'xl'} variant='filled'>Getting Started</Button>*/}
                         <Button component='a' href='https://github.com/folium-app' color='gray' radius={'xl'} variant='filled'>Open GitHub</Button>
-                        <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.13/folium-sideload-v1.13.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload (v1.13)</Button>
+                        <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.13/folium-sideload-v1.13.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload (v1.13, Old)</Button>
                     </Flex>
                     <Title order={2}>
                         Changes
