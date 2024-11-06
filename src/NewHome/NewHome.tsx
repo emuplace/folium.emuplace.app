@@ -170,7 +170,7 @@ export default function NewHome() {
                         <Button component='a' href='https://discord.gg/jv3wmCUTw7' color='violet' radius={'xl'}>Join Discord</Button>
                         {/*<Button component='a' href='https://jarrodnorwell.gitbook.io/folium/getting-started' color='grape' radius={'xl'} variant='filled'>Getting Started</Button>*/}
                         <Button component='a' href='https://github.com/folium-app' color='gray' radius={'xl'} variant='filled'>Open GitHub</Button>
-                        <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.13/folium-sideload-v1.13.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload (v1.13, Old)</Button>
+                        <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.13/folium-sideload-v1.13.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload</Button>
                     </Flex>
                     <Title order={2}>
                         Changes
