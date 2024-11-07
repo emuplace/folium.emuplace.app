@@ -15,7 +15,8 @@ export default defineConfig({
             input: {
                 index: resolve(__dirname, 'index.html'),
                 privacypolicy: resolve(__dirname, 'privacypolicy/index.html'),
-                checklist: resolve(__dirname, 'checklist/index.html')
+                checklist: resolve(__dirname, 'checklist/index.html'),
+                nextcore: resolve(__dirname, 'nextcore/index.html')
             }
         }
     }
