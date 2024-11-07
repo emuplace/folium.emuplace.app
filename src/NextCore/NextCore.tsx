@@ -12,7 +12,7 @@ export default function NextCore() {
 
     const audio = new Audio("https://quicksounds.com/uploads/tracks/528054973_948104858_1761723949.mp3")
     function play() {
-        if (audio.duration <= 0 && audio.paused) {
+        if (audio.paused) {
             audio.play()
         }
     }
