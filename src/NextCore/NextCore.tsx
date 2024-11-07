@@ -10,8 +10,11 @@ import { theme } from '../theme';
 export default function NextCore() {
     const date = new Date();
 
+    const audio = new Audio("https://quicksounds.com/uploads/tracks/528054973_948104858_1761723949.mp3")
     function play() {
-        new Audio("https://quicksounds.com/uploads/tracks/528054973_948104858_1761723949.mp3").play()
+        if (audio.duration <= 0 && audio.paused) {
+            audio.play()
+        }
     }
 
     return (
