@@ -68,7 +68,7 @@ export default function NewHome() {
                     tertiaryText: null
                 },
             ]
-        },
+        }/*,
         {
             text: 'v1.12',
             isLatest: false,
@@ -114,7 +114,7 @@ export default function NewHome() {
                     tertiaryText: null
                 }
             ]
-        }
+        }*/
     ];
 
     const items = changes.map((item) => {
@@ -168,7 +168,7 @@ export default function NewHome() {
                     <Flex align={'center'} gap={'md'} justify={'center'} direction={'row'} wrap={'wrap'}>
                         <Button component='a' href='https://apps.apple.com/au/app/folium/id6498623389' color='blue' radius={'xl'} variant='filled'>Open App Store</Button>
                         <Button component='a' href='https://discord.gg/jv3wmCUTw7' color='violet' radius={'xl'}>Join Discord</Button>
-                        {/*<Button component='a' href='https://jarrodnorwell.gitbook.io/folium/getting-started' color='grape' radius={'xl'} variant='filled'>Getting Started</Button>*/}
+                        <Button component='a' href='checklist' color='grape' radius={'xl'} variant='filled'>Checklist</Button>
                         <Button component='a' href='https://github.com/folium-app' color='gray' radius={'xl'} variant='filled'>Open GitHub</Button>
                         <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.13/folium-sideload-v1.13.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload</Button>
                     </Flex>

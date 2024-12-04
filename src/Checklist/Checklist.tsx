@@ -7,7 +7,8 @@ import {
     SimpleGrid,
     Space,
     Text,
-    Title
+    Title,
+    Tooltip
 } from '@mantine/core';
 import { theme } from '../theme';
 
@@ -40,7 +41,17 @@ export default function Checklist() {
                 </Text>
                 <Space h={'sm'} />
                 <SimpleGrid>
-                    <Checkbox label={'Cheats'} />
+                    <Tooltip label='YUV422 is not fully supported yet'>
+                        <Checkbox label={'Camera'} indeterminate onClick={(event) => event.preventDefault()} />
+                    </Tooltip>
+                    <Tooltip label='Rotation data is currently sent to the 3DS backwards'>
+                        <Checkbox label={'Gyroscope'} indeterminate onClick={(event) => event.preventDefault()} />
+                    </Tooltip>
+                    <Checkbox label={'Microphone'} checked onClick={(event) => event.preventDefault()} />
+                    <Tooltip label='Step data is not read correctly by the 3DS yet'>
+                        <Checkbox label={'Pedometer'} indeterminate onClick={(event) => event.preventDefault()} />
+                    </Tooltip>
+                    <Checkbox label={'Speakers'} checked onClick={(event) => event.preventDefault()} />
                 </SimpleGrid>
 
                 <Space h={'sm'} />
@@ -52,6 +63,27 @@ export default function Checklist() {
                 <Text c={'dimmed'}>
                     Nintendo DS, Nintendo DSi
                 </Text>
+                <Space h={'sm'} />
+                <SimpleGrid>
+                    <Tooltip label='Microphone data does not get read by the DS yet'>
+                        <Checkbox label={'Microphone'} onClick={(event) => event.preventDefault()} />
+                    </Tooltip>
+                    <Checkbox label={'Speakers'} checked onClick={(event) => event.preventDefault()} />
+                </SimpleGrid>
+
+                <Space h={'sm'} />
+
+                <Title order={2}>
+                    Lychee
+                </Title>
+                <Space h={'sm'} />
+                <Text c={'dimmed'}>
+                    PlayStation 1
+                </Text>
+                <Space h={'sm'} />
+                <SimpleGrid>
+                    <Checkbox label={'Speakers'} checked onClick={(event) => event.preventDefault()} />
+                </SimpleGrid>
 
                 <Space h={'sm'} />
 
