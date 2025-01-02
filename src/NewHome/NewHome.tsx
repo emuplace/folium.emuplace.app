@@ -11,6 +11,73 @@ import { theme } from '../theme';
 export default function NewHome() {
     const changes = [
         {
+            text: 'v1.14',
+            isLatest: false,
+            isUpcoming: true,
+            details: [
+                {
+                    secondaryText: 'Added PlayStation 1 emulation with the Lychee core (based on a modified PSXE by allkern)',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Added new default emulation controllers with visually appealing blur effects',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Added a new Missing Files option to the settings menu to assist with initial set up',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Added new options to the App Settings screen',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Added a new blurry button type to skins for skin creators',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Added real world pedometer data to the Cytrus core',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Added gyroscopic data to the Cytrus core',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Added widgets for Last Played and Play Time',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Added cached artwork for the Lychee and Mango cores',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Added the ability to delete games for the Lychee and Mango cores',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Changed the Cytrus Web API option from the App Settings screen to the Cytrus Settings screen',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Changed the cards on the Library screen to be the correct aspect ratio for their respective consoles',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Fixed an issue where the Mango core would crash when no audio or video data is available',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Fixed a minor memory leak for game icons using the Grape core',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Removed swipe to tap which caused issues where the button would be stuck down',
+                    tertiaryText: null
+                },
+            ]
+        },
+        {
             text: 'v1.13',
             isLatest: true,
             isUpcoming: false,
@@ -68,53 +135,7 @@ export default function NewHome() {
                     tertiaryText: null
                 },
             ]
-        }/*,
-        {
-            text: 'v1.12',
-            isLatest: false,
-            isUpcoming: false,
-            details: [
-                {
-                    secondaryText: 'Added support for the iPad mini 7 (A17 Pro)',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added support for cheats and multiplayer to the Cytrus core',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Changed how the Import and Settings buttons appear on the Library controller',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Changed the layout of the settings within the Settings menu',
-                    tertiaryText: null
-                }
-            ]
-        },
-        {
-            text: 'v1.11',
-            isLatest: false,
-            isUpcoming: false,
-            details: [
-                {
-                    secondaryText: 'Added support for iPhone 16 series',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Changed the Cytrus core to the latest original Citra source code',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Removed Mandarine specific settings from the Cytrus settings screen',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Update to the latest MoltenVK which should improve performance slightly',
-                    tertiaryText: null
-                }
-            ]
-        }*/
+        }
     ];
 
     const items = changes.map((item) => {
@@ -170,7 +191,7 @@ export default function NewHome() {
                         <Button component='a' href='https://discord.gg/jv3wmCUTw7' color='violet' radius={'xl'}>Join Discord</Button>
                         <Button component='a' href='checklist' color='grape' radius={'xl'} variant='filled'>Checklist</Button>
                         <Button component='a' href='https://github.com/folium-app' color='gray' radius={'xl'} variant='filled'>Open GitHub</Button>
-                        <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.13/folium-sideload-v1.13.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload</Button>
+                        <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.13/folium-sideload-v1.13.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload (v1.13)</Button>
                     </Flex>
                     <Title order={2}>
                         Changes

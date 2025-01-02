@@ -1,9 +1,0 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import NextCore from './NextCore.tsx';
-
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-    <React.StrictMode>
-        <NextCore />
-    </React.StrictMode>
-);
