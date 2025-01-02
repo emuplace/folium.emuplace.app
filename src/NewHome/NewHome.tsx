@@ -12,8 +12,8 @@ export default function NewHome() {
     const changes = [
         {
             text: 'v1.14',
-            isLatest: false,
-            isUpcoming: true,
+            isLatest: true,
+            isUpcoming: false,
             details: [
                 {
                     secondaryText: 'Added PlayStation 1 emulation with the Lychee core (based on a modified PSXE by allkern)',
@@ -79,7 +79,7 @@ export default function NewHome() {
         },
         {
             text: 'v1.13',
-            isLatest: true,
+            isLatest: false,
             isUpcoming: false,
             details: [
                 {
