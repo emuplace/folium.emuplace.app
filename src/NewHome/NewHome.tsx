@@ -189,7 +189,6 @@ export default function NewHome() {
                     <Flex align={'center'} gap={'md'} justify={'center'} direction={'row'} wrap={'wrap'}>
                         <Button component='a' href='https://apps.apple.com/au/app/folium/id6498623389' color='blue' radius={'xl'} variant='filled'>Open App Store</Button>
                         <Button component='a' href='https://discord.gg/jv3wmCUTw7' color='violet' radius={'xl'}>Join Discord</Button>
-                        <Button component='a' href='checklist' color='grape' radius={'xl'} variant='filled'>Checklist</Button>
                         <Button component='a' href='https://github.com/folium-app' color='gray' radius={'xl'} variant='filled'>Open GitHub</Button>
                         <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.13/folium-sideload-v1.13.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload (v1.13)</Button>
                     </Flex>
