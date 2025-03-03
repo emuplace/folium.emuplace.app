@@ -11,8 +11,43 @@ import { theme } from '../theme';
 export default function NewHome() {
     const changes = [
         {
-            text: 'v1.14',
+            text: 'v1.15',
             isLatest: true,
+            isUpcoming: false,
+            details: [
+                {
+                    secondaryText: 'Added symbols and text to blurred buttons to help discern function',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Added the ability to import missing files by tapping the respective file',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Added load and save states to the Game Boy Advance, Nintendo 3DS and Nintendo DS cores',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Re-implemented Game Boy Advance via the NanoBoyAdvance core',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Rewrote significant portions of the app to improve functionality and performance',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Switched all emulation screens to the new blurred style',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Updated all dependencies to ensure all the latest improvements are available',
+                    tertiaryText: null
+                }
+            ]
+        },
+        {
+            text: 'v1.14',
+            isLatest: false,
             isUpcoming: false,
             details: [
                 {
@@ -76,65 +111,6 @@ export default function NewHome() {
                     tertiaryText: null
                 },
             ]
-        },
-        {
-            text: 'v1.13',
-            isLatest: false,
-            isUpcoming: false,
-            details: [
-                {
-                    secondaryText: 'Added support for custom layout options for the Cytrus core',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added the ability to open the Cheats screen when in-game for the Cytrus core',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added a new log level setting for the Cytrus core to help with debugging',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added basic support for DSi mode for the Grape core by updating NooDS',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added landscape support for the Grape and Mango core on all iPhone models (iPad is WIP)',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Changed the number of columns for both Authentication and the Library screens',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Changed how the keyboard works for the Cytrus core enabling support for both iPad and iPhone',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Fixed an issue where all iPad models could not receive touch',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Fixed an issue where the on-screen controller would display again when the device orientation changes while a Bluetooth controller is connected',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Fixed a crash when installing system applications for the Cytrus core caused by applications with invalid artwork',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Fixed an issue where thumbsticks in custom skins would not use their assigned background artwork',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Fixed an issue where Nintendo DS game titles would be duplicated in the Library screen',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Updated the MoltenVK dependency which may fix some graphical issues',
-                    tertiaryText: null
-                },
-            ]
         }
     ];
 
@@ -188,9 +164,9 @@ export default function NewHome() {
                     </Text>
                     <Flex align={'center'} gap={'md'} justify={'center'} direction={'row'} wrap={'wrap'}>
                         <Button component='a' href='https://apps.apple.com/au/app/folium/id6498623389' color='blue' radius={'xl'} variant='filled'>Open App Store</Button>
-                        <Button component='a' href='https://discord.gg/jv3wmCUTw7' color='violet' radius={'xl'}>Join Discord</Button>
+                        <Button component='a' href='https://reddit.com/r/foliumapp' color='red' radius={'xl'}>Join Reddit</Button>
                         <Button component='a' href='https://github.com/folium-app' color='gray' radius={'xl'} variant='filled'>Open GitHub</Button>
-                        <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.14/folium-sideload-v1.14.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload (v1.14)</Button>
+                        <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.15/folium-sideload-v1.15.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload (v1.15)</Button>
                     </Flex>
                     <Title order={2}>
                         Changes
