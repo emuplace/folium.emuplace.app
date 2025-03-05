@@ -11,6 +11,17 @@ import { theme } from '../theme';
 export default function NewHome() {
     const changes = [
         {
+            text: 'v1.16',
+            isLatest: false,
+            isUpcoming: true,
+            details: [
+                {
+                    secondaryText: 'Fixed an issue where some games could not be displayed or installed',
+                    tertiaryText: null
+                }
+            ]
+        },
+        {
             text: 'v1.15',
             isLatest: true,
             isUpcoming: false,
