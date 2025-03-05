@@ -12,8 +12,8 @@ export default function NewHome() {
     const changes = [
         {
             text: 'v1.16',
-            isLatest: false,
-            isUpcoming: true,
+            isLatest: true,
+            isUpcoming: false,
             details: [
                 {
                     secondaryText: 'Fixed an issue where some games could not be displayed or installed',
@@ -23,7 +23,7 @@ export default function NewHome() {
         },
         {
             text: 'v1.15',
-            isLatest: true,
+            isLatest: false,
             isUpcoming: false,
             details: [
                 {
@@ -177,7 +177,7 @@ export default function NewHome() {
                         <Button component='a' href='https://apps.apple.com/au/app/folium/id6498623389' color='blue' radius={'xl'} variant='filled'>Open App Store</Button>
                         <Button component='a' href='https://reddit.com/r/foliumapp' color='red' radius={'xl'}>Join Reddit</Button>
                         <Button component='a' href='https://github.com/folium-app' color='gray' radius={'xl'} variant='filled'>Open GitHub</Button>
-                        <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.15/folium-sideload-v1.15.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload (v1.15)</Button>
+                        <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.16/folium-sideload-v1.16.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload (v1.16)</Button>
                     </Flex>
                     <Title order={2}>
                         Changes
