@@ -11,116 +11,53 @@ import { theme } from '../theme';
 export default function NewHome() {
     const changes = [
         {
-            text: 'v1.16',
+            text: 'v1.17',
             isLatest: true,
+            isUpcoming: false,
+            details: [
+                {
+                    secondaryText: 'Added a new middle-man screen for 3DS games containing information about the game, it\'s cheats and save states (if any) and play and delete buttons',
+                    tertiaryText: 'This screen is only available for iPhone right now'
+                },
+                {
+                    secondaryText: 'Added support for the iPhone 16e and latest iPad models',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Added more information to 3DS games and added save state validation',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Added the ability to delete cheats and save states and toggle cheats in the middle-man screen',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Fixed an issue where load and save state buttons would not have an identifying image on iOS 17 or below due to incorrect SF Symbol names',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Fixed an issue where "force touching" the settings button during emulation would not bring up the menu the first time',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Fixed an issue where cheats for 3DS games would show for games that were not the currently selected one',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Reverted to a clean build of Citra (Cytrus) improving performance with the latest MoltenVK',
+                    tertiaryText: null
+                }
+            ]
+        },
+        {
+            text: 'v1.16',
+            isLatest: false,
             isUpcoming: false,
             details: [
                 {
                     secondaryText: 'Fixed an issue where some games could not be displayed or installed',
                     tertiaryText: null
                 }
-            ]
-        },
-        {
-            text: 'v1.15',
-            isLatest: false,
-            isUpcoming: false,
-            details: [
-                {
-                    secondaryText: 'Added symbols and text to blurred buttons to help discern function',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added the ability to import missing files by tapping the respective file',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added load and save states to the Game Boy Advance, Nintendo 3DS and Nintendo DS cores',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Re-implemented Game Boy Advance via the NanoBoyAdvance core',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Rewrote significant portions of the app to improve functionality and performance',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Switched all emulation screens to the new blurred style',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Updated all dependencies to ensure all the latest improvements are available',
-                    tertiaryText: null
-                }
-            ]
-        },
-        {
-            text: 'v1.14',
-            isLatest: false,
-            isUpcoming: false,
-            details: [
-                {
-                    secondaryText: 'Added PlayStation 1 emulation with the Lychee core (based on a modified PSXE by allkern)',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added new default emulation controllers with visually appealing blur effects',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added a new Missing Files option to the settings menu to assist with initial set up',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added new options to the App Settings screen',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added a new blurry button type to skins for skin creators',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added real world pedometer data to the Cytrus core',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added gyroscopic data to the Cytrus core',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added widgets for Last Played and Play Time',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added cached artwork for the Lychee and Mango cores',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added the ability to delete games for the Lychee and Mango cores',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Changed the Cytrus Web API option from the App Settings screen to the Cytrus Settings screen',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Changed the cards on the Library screen to be the correct aspect ratio for their respective consoles',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Fixed an issue where the Mango core would crash when no audio or video data is available',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Fixed a minor memory leak for game icons using the Grape core',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Removed swipe to tap which caused issues where the button would be stuck down',
-                    tertiaryText: null
-                },
             ]
         }
     ];
