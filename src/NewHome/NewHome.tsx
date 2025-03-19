@@ -114,7 +114,7 @@ export default function NewHome() {
                         <Button component='a' href='https://apps.apple.com/au/app/folium/id6498623389' color='blue' radius={'xl'} variant='filled'>Open App Store</Button>
                         <Button component='a' href='https://reddit.com/r/foliumapp' color='red' radius={'xl'}>Join Reddit</Button>
                         <Button component='a' href='https://github.com/folium-app' color='gray' radius={'xl'} variant='filled'>Open GitHub</Button>
-                        <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.16/folium-sideload-v1.16.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload (v1.16)</Button>
+                        <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.17/folium-sideload-v1.17.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload (v1.17)</Button>
                     </Flex>
                     <Title order={2}>
                         Changes
