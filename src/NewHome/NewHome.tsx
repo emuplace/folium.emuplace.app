@@ -12,8 +12,8 @@ export default function NewHome() {
     const changes = [
         {
             text: 'v1.19',
-            isLatest: false,
-            isUpcoming: true,
+            isLatest: true,
+            isUpcoming: false,
             details: [
                 {
                     secondaryText: 'Added haptic feedback when loading and saving states when emulating with Cytrus, Grape and NewGrape, feedback is different for a failed or successful load or save',
@@ -35,7 +35,7 @@ export default function NewHome() {
         },
         {
             text: 'v1.18',
-            isLatest: true,
+            isLatest: false,
             isUpcoming: false,
             details: [
                 {
@@ -134,7 +134,7 @@ export default function NewHome() {
                         <Button component='a' href='https://apps.apple.com/au/app/folium/id6498623389' color='blue' radius={'xl'} variant='filled'>Open App Store</Button>
                         <Button component='a' href='https://reddit.com/r/foliumapp' color='red' radius={'xl'}>Join Reddit</Button>
                         <Button component='a' href='https://github.com/folium-app' color='gray' radius={'xl'} variant='filled'>Open GitHub</Button>
-                        <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.17/folium-sideload-v1.17.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload (v1.17)</Button>
+                        <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.19/folium-sideload-v1.19.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload (v1.19)</Button>
                     </Flex>
                     <Title order={2}>
                         Changes
