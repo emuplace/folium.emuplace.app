@@ -11,51 +11,71 @@ import { theme } from '../theme';
 export default function NewHome() {
     const changes = [
         {
-            text: 'v1.17',
-            isLatest: true,
-            isUpcoming: false,
+            text: 'v1.19',
+            isLatest: false,
+            isUpcoming: true,
             details: [
                 {
-                    secondaryText: 'Added a new middle-man screen for 3DS games containing information about the game, it\'s cheats and save states (if any) and play and delete buttons',
-                    tertiaryText: 'This screen is only available for iPhone right now'
-                },
-                {
-                    secondaryText: 'Added support for the iPhone 16e and latest iPad models',
+                    secondaryText: 'Added haptic feedback when loading and saving states when emulating with Cytrus, Grape and NewGrape, feedback is different for a failed or successful load or save',
                     tertiaryText: null
                 },
                 {
-                    secondaryText: 'Added more information to 3DS games and added save state validation',
+                    secondaryText: 'Added the ability to load and save states to the NewGrape core (melonDS)',
                     tertiaryText: null
                 },
                 {
-                    secondaryText: 'Added the ability to delete cheats and save states and toggle cheats in the middle-man screen',
+                    secondaryText: 'Added audio output support for the NewGrape core (melonDS)',
                     tertiaryText: null
                 },
                 {
-                    secondaryText: 'Fixed an issue where load and save state buttons would not have an identifying image on iOS 17 or below due to incorrect SF Symbol names',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Fixed an issue where "force touching" the settings button during emulation would not bring up the menu the first time',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Fixed an issue where cheats for 3DS games would show for games that were not the currently selected one',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Reverted to a clean build of Citra (Cytrus) improving performance with the latest MoltenVK',
+                    secondaryText: 'Fixed crashing in NewGrape (melonDS) when pressing buttons',
                     tertiaryText: null
                 }
             ]
         },
         {
-            text: 'v1.16',
-            isLatest: false,
+            text: 'v1.18',
+            isLatest: true,
             isUpcoming: false,
             details: [
                 {
-                    secondaryText: 'Fixed an issue where some games could not be displayed or installed',
+                    secondaryText: 'Added a small "Swipe for more" footer when more than one cheat or save state',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Added the ability to delete accounts',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Added a new experimental NewGrape core based on melonDS 0.9.5',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Added the ability to use the Nintendo DSi mode to the NewGrape with appropriate files',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Connecting a controller no longer hides the settings button',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Cytrus\' default skin on iPad and iPhone mini models now displays the correct blurred thumbsticks',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Fixed a large memory leak related to the camera when emulating with Cytrus',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Fixed a small memory leak related to file handling operations when emulating with Cytrus',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Updated Cytrus to the new SDL3 migration branch',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Updated the VulkanSDK to 1.4.309.0',
                     tertiaryText: null
                 }
             ]
