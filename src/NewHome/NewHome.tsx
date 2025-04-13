@@ -28,7 +28,19 @@ export default function NewHome() {
                     tertiaryText: null
                 },
                 {
+                    secondaryText: 'Added HQx upscaling support for the Grape and NewGrape cores',
+                    tertiaryText: null
+                },
+                {
                     secondaryText: 'Fixed crashing in NewGrape (melonDS) when pressing buttons',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Fixed minor errors related to the C and CXX dialect update below',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: 'Updated all packages and targets to c2x and cxx2b',
                     tertiaryText: null
                 }
             ]
