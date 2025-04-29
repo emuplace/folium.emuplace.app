@@ -60,7 +60,7 @@ export default function NewHome() {
                     tertiaryText: null
                 },
                 {
-                    secondaryText: '(All) Fixed an issue where changing orientation would remove the settings button's menu',
+                    secondaryText: '(All) Fixed an issue where changing orientation would remove the settings button\'s menu',
                     tertiaryText: null
                 },
                 {
