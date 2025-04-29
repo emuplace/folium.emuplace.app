@@ -11,8 +11,71 @@ import { theme } from '../theme';
 export default function NewHome() {
     const changes = [
         {
-            text: 'v1.19',
+            text: 'v1.20',
             isLatest: true,
+            isUpcoming: false,
+            details: [
+                {
+                    secondaryText: '(Cytrus) Added Azahar settings to the settings screen',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: '(Cytrus) Added support for the left and right rear cameras',
+                    tertiaryText: 'Left uses Telephoto, right uses Wide (Main)'
+                },
+                {
+                    secondaryText: '(Cytrus) Added a new screen for multiplayer rooms',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: '(Lychee) Added support for booting exe files',
+                    tertiaryText: 'These are mainly used for testing PlayStation 1 emulators'
+                },
+                {
+                    secondaryText: 'Changed the layout of the import games and settings menus',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: '(All) Changed skins so they actually work with Nintendo and PlayStation button names',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: '(All) Changed how emulation notifications are handled for application state and controller connections',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: '(Cytrus) Changed the core from Cytrus to CytrusAzahar',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: '(Cytrus) Changed how the settings screen is handled',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: '(Cytrus) Changed how multiplayer rooms are handled',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: '(Grape) Changed how the settings screen is handled',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: '(All) Fixed an issue where changing orientation would remove the settings button's menu',
+                    tertiaryText: null
+                },
+                {
+                    secondaryText: '(Lychee) Fixed an issue where rendering would be broken when in 24-bit mode',
+                    tertiaryText: 'This mainly affects MDEC videos'
+                },
+                {
+                    secondaryText: '(Lychee) Fixed a crash related to the RGB24 rendering mode',
+                    tertiaryText: null
+                }
+            ]
+        },
+        {
+            text: 'v1.19',
+            isLatest: false,
             isUpcoming: false,
             details: [
                 {
@@ -41,53 +104,6 @@ export default function NewHome() {
                 },
                 {
                     secondaryText: 'Updated all packages and targets to c2x and cxx2b',
-                    tertiaryText: null
-                }
-            ]
-        },
-        {
-            text: 'v1.18',
-            isLatest: false,
-            isUpcoming: false,
-            details: [
-                {
-                    secondaryText: 'Added a small "Swipe for more" footer when more than one cheat or save state',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added the ability to delete accounts',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added a new experimental NewGrape core based on melonDS 0.9.5',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Added the ability to use the Nintendo DSi mode to the NewGrape with appropriate files',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Connecting a controller no longer hides the settings button',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Cytrus\' default skin on iPad and iPhone mini models now displays the correct blurred thumbsticks',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Fixed a large memory leak related to the camera when emulating with Cytrus',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Fixed a small memory leak related to file handling operations when emulating with Cytrus',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Updated Cytrus to the new SDL3 migration branch',
-                    tertiaryText: null
-                },
-                {
-                    secondaryText: 'Updated the VulkanSDK to 1.4.309.0',
                     tertiaryText: null
                 }
             ]
@@ -146,7 +162,7 @@ export default function NewHome() {
                         <Button component='a' href='https://apps.apple.com/au/app/folium/id6498623389' color='blue' radius={'xl'} variant='filled'>Open App Store</Button>
                         <Button component='a' href='https://reddit.com/r/foliumapp' color='red' radius={'xl'}>Join Reddit</Button>
                         <Button component='a' href='https://github.com/folium-app' color='gray' radius={'xl'} variant='filled'>Open GitHub</Button>
-                        <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.19/folium-sideload-v1.19.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload (v1.19 (4))</Button>
+                        <Button component='a' href='https://github.com/emuplace/folium.emuplace.app/releases/download/v1.20/folium-sideload-v1.20.ipa.zip' color='teal' radius={'xl'} variant='filled'>Sideload (v1.20)</Button>
                     </Flex>
                     <Title order={2}>
                         Changes
