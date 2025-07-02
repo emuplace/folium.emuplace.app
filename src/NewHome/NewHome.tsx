@@ -1,14 +1,147 @@
 import '@mantine/core/styles.css';
 import {
-    Anchor, Button, Flex, Group, Badge,
-    MantineProvider, List, Accordion,
-    Stack, Text, Title,
-    Container
+    Accordion,
+    Anchor, Badge, Center, Flex,
+    Group,
+    List,
+    MantineProvider,
+    Space,
+    Stack, Text, Title
 } from '@mantine/core';
-import classes from './NewHome.module.css';
 import { theme } from '../theme';
 
 export default function NewHome() {
+    const changes = [
+        {
+            text: 'Latest Changes',
+            secondaryText: 'Updated 2nd July 2025',
+            details: [
+                {
+                    header: 'Added',
+                    items: [
+                        {
+                            title: 'Added the new Cytrus (3DS) core based on Azahar',
+                            subtitle: ''
+                        },
+                        {
+                            title: 'Added the new Lychee (PS1) core based on PSXE',
+                            subtitle: ''
+                        },
+                        {
+                            title: 'Added the new Tomato (GBA) core based on NanoBoyAdvance',
+                            subtitle: ''
+                        },
+                        {
+                            title: 'Added a new onboarding process upon initial launch to request permissions, Sign in with Apple, etc',
+                            subtitle: ''
+                        }
+                    ]
+                },
+                {
+                    header: 'Changed',
+                    items: [
+                        {
+                            title: 'Changed how dependencies are handled by containing them all in a single Swift Package',
+                            subtitle: ''
+                        }
+                    ]
+                },
+                {
+                    header: 'Deprecated',
+                    items: []
+                },
+                {
+                    header: 'Fixed',
+                    items: []
+                },
+                {
+                    header: 'Removed',
+                    items: []
+                },
+                {
+                    header: 'Security',
+                    items: []
+                }
+            ]
+        }
+    ]
+
+    const items = changes.map((item) => {
+        return (
+            <Accordion.Item key={item.text} value={item.text}>
+                <Accordion.Control>
+                    <Group justify={'space-between'} mr={'sm'}>
+                        <Text>
+                            {item.text}
+                        </Text>
+                        <Text c={'dimmed'}>
+                            {item.secondaryText}
+                        </Text>
+                    </Group>
+                </Accordion.Control>
+                <Accordion.Panel mr={'md'}>
+                    {
+                        item.details.map((detail, index) => (
+                            <>
+                                <Title order={2}>
+                                    {detail.header}
+                                </Title>
+                                <List>
+                                    {
+                                        detail.items.length == 0 ? (
+                                            <Text c={'dimmed'}>Unchanged</Text>
+                                        ) : (
+                                            detail.items.map((item) => (
+                                                <List.Item>
+                                                    <Text c={'dimmed'}>
+                                                        {item.title}
+                                                    </Text>
+                                                </List.Item>
+                                            ))
+                                        )
+                                    }
+                                </List>
+                                <Space h={index == item.details.length - 1 ? 0 : 'md'} />
+                            </>
+                        ))
+                    }
+                </Accordion.Panel>
+            </Accordion.Item>
+        )
+    })
+
+    const date = new Date()
+
+    return (
+        <MantineProvider theme={theme} forceColorScheme={date.getHours() >= 7 && date.getHours() <= 19 ? 'light' : 'dark'}>
+            <Flex align={'center'} mih={'100vh'} justify={'center'} mx={'md'}>
+                <Stack>
+                    <Anchor href='https://twitter.com/getfoliumapp' target={'_blank'}>
+                        <Text c={theme.primaryColor} ta={'center'}>
+                            @getfoliumapp
+                        </Text>
+                    </Anchor>
+                    <Title order={1} ta={'center'}>
+                        Folium, a multi-system emulation app
+                    </Title>
+                    <Center>
+                        <Badge variant={'dot'}>
+                            #a-new-beginning
+                        </Badge>
+                    </Center>
+                    <Text c={'dimmed'} ta={'center'}>
+                        Beautifully designed, high performing multi-system emulation in the palm of your hands
+                    </Text>
+                    <Space h={'md'} />
+                    <Accordion radius={'lg'} variant={'contained'}>
+                        {items}
+                    </Accordion>
+                </Stack>
+            </Flex>
+        </MantineProvider>
+    )
+
+    /*
     const changes = [
         {
             text: 'v1.20',
@@ -173,5 +306,5 @@ export default function NewHome() {
                 </Stack>
             </Container>
         </MantineProvider>
-    );
+    );*/
 }
