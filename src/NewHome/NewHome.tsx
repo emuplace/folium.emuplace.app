@@ -1,7 +1,7 @@
 import '@mantine/core/styles.css';
 import {
     Accordion,
-    Anchor, Badge, Center, Flex,
+    Anchor, Badge, Button, Center, Flex,
     Group,
     List,
     MantineProvider,
@@ -14,7 +14,7 @@ export default function NewHome() {
     const changes = [
         {
             text: 'Latest Changes',
-            secondaryText: 'Updated 2nd July 2025',
+            secondaryText: 'Updated 13th July 2025',
             details: [
                 {
                     header: 'Added',
@@ -32,7 +32,11 @@ export default function NewHome() {
                             subtitle: ''
                         },
                         {
-                            title: 'Added a new onboarding process upon initial launch to request permissions, Sign in with Apple, etc',
+                            title: 'Added a new onboarding process with permission requests, Sign in with Apple and file importing',
+                            subtitle: ''
+                        },
+                        {
+                            title: 'Added support for localization with English and Bahasa Indonesia currently being supported',
                             subtitle: ''
                         }
                     ]
@@ -43,6 +47,10 @@ export default function NewHome() {
                         {
                             title: 'Changed how dependencies are handled by containing them all in a single Swift Package',
                             subtitle: ''
+                        },
+                        {
+                            title: 'Changed the minimum supported version to iOS 18, macOS 15 and tvOS 18',
+                            subtitle: 'This change is temporary and will be lowered when lower version support is reintroduced'
                         }
                     ]
                 },
@@ -93,9 +101,14 @@ export default function NewHome() {
                                         ) : (
                                             detail.items.map((item) => (
                                                 <List.Item>
-                                                    <Text c={'dimmed'}>
+                                                    <Text>
                                                         {item.title}
                                                     </Text>
+                                                    <List.Item hidden={item.subtitle.length == 0}>
+                                                        <Text c={'dimmed'}>
+                                                            {item.subtitle}
+                                                        </Text>
+                                                    </List.Item>
                                                 </List.Item>
                                             ))
                                         )
@@ -136,6 +149,12 @@ export default function NewHome() {
                     <Accordion radius={'lg'} variant={'contained'}>
                         {items}
                     </Accordion>
+                    <Space h={'md'} />
+                    <Center>
+                        <Button component={'a'} href={'https://github.com/emuplace/folium.emuplace.app/releases'} radius={'xl'} target={'_blank'} variant={'light'}>
+                            Older Releases
+                        </Button>
+                    </Center>
                 </Stack>
             </Flex>
         </MantineProvider>
