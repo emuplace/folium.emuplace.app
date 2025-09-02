@@ -1,14 +1,18 @@
 import '@mantine/core/styles.css';
 import {
     Accordion,
-    Anchor, Badge, Button, Center, Flex,
+    Anchor, AspectRatio, Badge, Button, Center, Container,
     Group,
+    Image,
     List,
     MantineProvider,
+    Paper,
     Space,
     Stack, Text, Title
 } from '@mantine/core';
+import { Carousel } from '@mantine/carousel';
 import { theme } from '../theme';
+import { useOs } from '@mantine/hooks';
 
 export default function NewHome() {
     const changes = [
@@ -120,10 +124,11 @@ export default function NewHome() {
     })
 
     const date = new Date()
+    const os = useOs();
 
     return (
         <MantineProvider theme={theme} forceColorScheme={date.getHours() >= 7 && date.getHours() <= 19 ? 'light' : 'dark'}>
-            <Flex align={'center'} mih={'100vh'} justify={'center'} mx={'md'}>
+            <Container my={'xl'}>
                 <Stack>
                     <Anchor href='https://twitter.com/getfoliumapp' target={'_blank'}>
                         <Text c={theme.primaryColor} ta={'center'}>
@@ -151,8 +156,27 @@ export default function NewHome() {
                             Older Releases
                         </Button>
                     </Center>
+                    <Space h={'md'} />
+                    <Carousel withIndicators slideGap={'lg'} slideSize={['android', 'ios'].includes(os) ? '50%' : '25%'}>
+                        {
+                            [
+                                'one', 'two', 'three', 'four', 'five',
+                                'six', 'seven', 'eight', 'nine', 'ten'
+                            ].map((image) => (
+                                <>
+                                    <Carousel.Slide>
+                                        <Paper radius={['android', 'ios'].includes(os) ? 'lg' : 'xl'} style={{ overflow: 'hidden' }} withBorder>
+                                            <AspectRatio ratio={9 / 19.5}>
+                                                <Image src={`/images/${image}.png`} />
+                                            </AspectRatio>
+                                        </Paper>
+                                    </Carousel.Slide>
+                                </>
+                            ))
+                        }
+                    </Carousel>
                 </Stack>
-            </Flex>
+            </Container>
         </MantineProvider>
     )
 
