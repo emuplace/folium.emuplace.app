@@ -124,7 +124,7 @@ export default function NewHome() {
     })
 
     const date = new Date()
-    const os = useOs();
+    const os = useOs()
 
     return (
         <MantineProvider theme={theme} forceColorScheme={date.getHours() >= 7 && date.getHours() <= 19 ? 'light' : 'dark'}>
