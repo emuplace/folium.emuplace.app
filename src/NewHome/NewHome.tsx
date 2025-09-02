@@ -14,29 +14,13 @@ export default function NewHome() {
     const changes = [
         {
             text: 'Latest Changes',
-            secondaryText: 'Updated 13th July 2025',
+            secondaryText: 'Updated 2nd September 2025',
             details: [
                 {
                     header: 'Added',
                     items: [
                         {
-                            title: 'Added the new Cytrus (3DS) core based on Azahar',
-                            subtitle: ''
-                        },
-                        {
-                            title: 'Added the new Lychee (PS1) core based on PSXE',
-                            subtitle: ''
-                        },
-                        {
-                            title: 'Added the new Tomato (GBA) core based on NanoBoyAdvance',
-                            subtitle: ''
-                        },
-                        {
-                            title: 'Added a new onboarding process with permission requests, Sign in with Apple and file importing',
-                            subtitle: ''
-                        },
-                        {
-                            title: 'Added support for localization with English and Bahasa Indonesia currently being supported',
+                            title: 'Added a new filter menu to the Library screen with sub-menu options for each core allowing users to hide or show a core as well as jump to its section within the Library screen',
                             subtitle: ''
                         }
                     ]
@@ -45,12 +29,24 @@ export default function NewHome() {
                     header: 'Changed',
                     items: [
                         {
-                            title: 'Changed how dependencies are handled by containing them all in a single Swift Package',
+                            title: 'Changed how the artwork sub-menu handles Import and Delete so that Delete only shows when a custom artwork has been imported and so that it does not need a full Library refresh to update',
                             subtitle: ''
                         },
                         {
-                            title: 'Changed the minimum supported version to iOS 18, macOS 15 and tvOS 18',
-                            subtitle: 'This change is temporary and will be lowered when lower version support is reintroduced'
+                            title: 'Changed how the Library screen and Onboarding screens work by separating them by iOS version, Deprecated for iOS 16-17 and Latest for iOS 26 with iOS 18 not having a prefix',
+                            subtitle: ''
+                        },
+                        {
+                            title: 'Changed Library and Onboarding screens so they are now much more consistent with each other',
+                            subtitle: ''
+                        },
+                        {
+                            title: 'Changed Grape on-screen controls to use Liquid Glass on iOS 26 as Beta 8 fixes a frame drop issue',
+                            subtitle: ''
+                        },
+                        {
+                            title: 'Changed how the GamesManager handles errors so that errors are "collected" and can be shown once the Library screen is presented (not fully implemented yet)',
+                            subtitle: ''
                         }
                     ]
                 },
